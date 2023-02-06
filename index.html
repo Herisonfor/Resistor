@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RESISTOR</title>
+</head>
+<body onload="calcular()" class="body">
+    
+    <nav>
+        <div class="container">
+            <a>Calculadora de resistência</a>
+            <p>Herison e Milene</p>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <p>Primeira faixa</p>
+
+            <button onclick="faixa1('0')">Preto (0)</button>
+            <button onclick="faixa1('1')">Marrom (1)</button>
+            <button onclick="faixa1('2')">Vermelho (2)</button>
+            <button onclick="faixa1('3')">Laranja (3)</button>
+            <button onclick="faixa1('4')">Amarelo (4)</button>
+            <button onclick="faixa1('5')">Verde (5)</button>
+            <button onclick="faixa1('6')">Azul (6)</button>
+            <button onclick="faixa1('7')">Violeta (7)</button>
+            <button onclick="faixa1('8')">Cinza (8)</button>
+            <button onclick="faixa1('9')">Branco (9)</button>
+        </div>
+
+        <div>
+            <p>Segunda faixa</p>
+
+            <button onclick="faixa2('0')">Preto (0)</button>
+            <button onclick="faixa2('1')">Marrom (1)</button>
+            <button onclick="faixa2('2')">Vermelho (2)</button>
+            <button onclick="faixa2('3')">Laranja (3)</button>
+            <button onclick="faixa2('4')">Amarelo (4)</button>
+            <button onclick="faixa2('5')">Verde (5)</button>
+            <button onclick="faixa2('6')">Azul (6)</button>
+            <button onclick="faixa2('7')">Violeta (7)</button>
+            <button onclick="faixa2('8')">Cinza (8)</button>
+            <button onclick="faixa2('9')">Branco (9)</button>
+        </div>
+
+        <div>
+            <p>Terceira faixa</p>
+
+            <button onclick="faixa3('0')">Preto (0)</button>
+            <button onclick="faixa3('1')">Marrom (1)</button>
+            <button onclick="faixa3('2')">Vermelho (2)</button>
+            <button onclick="faixa3('3')">Laranja (3)</button>
+            <button onclick="faixa3('4')">Amarelo (4)</button>
+            <button onclick="faixa3('5')">Verde (5)</button>
+            <button onclick="faixa3('6')">Azul (6)</button>
+            <button onclick="faixa3('7')">Violeta (7)</button>
+            <button onclick="faixa3('8')">Cinza (8)</button>
+            <button onclick="faixa3('9')">Branco (9)</button>
+        </div>
+
+        <div>
+            <p> Multiplicador</p>
+
+            <button onclick="multiplicador('1')">Preto (1)</button>
+            <button onclick="multiplicador('10')">Marrom (10)</button>
+            <button onclick="multiplicador('100')">Vermelho (100)</button>
+            <button onclick="multiplicador('1000')">Laranja (1000)</button>
+            <button onclick="multiplicador('10000')">Amarelo (10000)</button>
+            <button onclick="multiplicador('100000')">Verde (100000)</button>
+            <button onclick="multiplicador('1000000')">Azul (1000000)</button>
+            <button onclick="multiplicador('10000000')">Violeta (10000000)</button>
+            <button onclick="multiplicador('0.1')">Ouro (0.1)</button>
+            <button onclick="multiplicador('0.01')">Prata (0.01)</button>
+        </div>
+
+        <div id="ultimo-elemento">
+            <p>Tolerância</p>
+
+            <button onclick="tolerancia('1')">Marrom (1)</button>
+            <button onclick="tolerancia('2')">Vermelho (2)</button>
+            <button onclick="tolerancia('5')">Ouro (5)</button>
+            <button onclick="tolerancia('10')">Prata (10)</button>
+            <button onclick="tolerancia('20')">Ausência (20)</button>
+        </div>
+    </main>
+    
+
+    <div class="resul">
+        <a><span id="tela"></span>±<span id="tolerancia"></span>% Ω</a>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
